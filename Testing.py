@@ -20,6 +20,20 @@ def capture_image(name="bubby"):
 	cap.release()
 	cv2.destroyAllWindows()
 	
+
+
+def camera_test():
+	cap = cv2.VideoCapture(0)
+	print("press q to quit")
+	while True:
+		ret, frame = cap.read()
+		cv2.imshow("frame", frame)
+		if cv2.waitKey(1) & 0xff == ord('q'):
+			break
+	
+	cap.release()
+	cv2.destroyAllWindows()
+		
  
  
 def convert_binary(frame):
