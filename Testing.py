@@ -8,6 +8,10 @@ from DatabaseManagers import MongoDBClient
 
 labels = ["panda", "milo", "bubby"]
 
+# todo learn to read camera data
+# todo learn to `Label` dataset
+# todo learn to train dataset (mobile net)
+
 
 class Camera:
 	
@@ -33,7 +37,7 @@ class Camera:
 		
 		
 	@staticmethod
-	def camera_test(cap=cap) -> None:
+	def test_camera(cap=cap) -> None:
 		print("press q to quit")
 		while True:
 			ret, frame = cap.read()
@@ -46,9 +50,9 @@ class Camera:
 		return cv2.imencode(".jpg", frame)[1].tostring()
 	
 	@staticmethod 	
-	def convert_image(binary):
+	def convert_image(binary: str):
 		nparr = np.fromstring(binary, np.uint8)
-	 	return cv2.imdecode(binary, cv2.CV_LOAD_IMAGE_COLOR)	
+		return cv2.imdecode(binary, cv2.CV_LOAD_IMAGE_COLOR)	
 	 	
 	 	
 atexit.register(Camera.tear_down)
