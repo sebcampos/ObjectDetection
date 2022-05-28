@@ -13,7 +13,7 @@ def capture_image(name="bubby"):
 	cap = cv2.VideoCapture(0)
 	time.sleep(5)
 	ret, frame = cap.read()
-	MongoDBClient.add_image("ObjectDetection", convert_binary(frame), f"{name}{uuid.uuid1()}")
+	MongoDBClient.add_image("ObjectDetection", convert_binary(frame), f"{name}_{uuid.uuid1()}")
 	# cv2.imwrite(f"{name}.jpg", frame)
 	# cv2.imshow("frame", frame)
 	time.sleep(2)
