@@ -85,7 +85,13 @@ eval "$(pyenv virtualenv-init -)"
 - pyenv local <environment_name>
 
 # Tensorflow raspi 4 arm 64
--  ` pip install tensorflow-aarch64`
+All Object detection logic comes from Nicholas Renottes
+5 hour Tensorflow Object Detection course on youtube
+
+- `pip install tensorflow-aarch64`
+- Annotation software `https://github.com/tzutalin/labelImg`
+
+
 
 ## Depencies
 
