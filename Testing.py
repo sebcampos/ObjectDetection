@@ -7,7 +7,7 @@ from DatabaseManagers import MongoDBClient, DataFrame
 
 labels = ["panda", "milo", "bubby"]
 labels_2 = ["person", "dog"]
-labels_3 = ["licence plates"]
+labels_3 = ["licence plates"fdf ]
 
 # todo learn to read camera data
 # todo learn to `Label` dataset
