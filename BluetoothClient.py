@@ -1,8 +1,14 @@
 from bluetooth import *
-
+import socket
 
 
 class BluetoothClient:
+	hotsMacAddress = 'E4:5F:01:AE:44:CA'
+	port 
+
+
+
+class BluetoothClientBlueZ:
 	
 	server_sock = BluetoothSocket( RFCOMM )
 	server_sock.bind(("", PORT_ANY))
