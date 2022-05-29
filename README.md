@@ -63,7 +63,8 @@ make \
 tk-dev \
 wget \
 xz-utils \
-zlib1g-dev 
+zlib1g-dev \
+libbluetooth-dev
 ```
 
 
@@ -141,6 +142,7 @@ ptyprocess                   0.7.0
 pure-eval                    0.2.2
 pyasn1                       0.4.8
 pyasn1-modules               0.2.8
+PyBluez			     0.23
 Pygments                     2.12.0
 pymongo                      4.1.1
 pyparsing                    3.0.9
