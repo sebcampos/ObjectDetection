@@ -32,7 +32,7 @@ class Camera:
 			return df
 	
 	@staticmethod
-	def capture_image(name:str ="bubby", local:bool = False) -> None:
+	def capture_image(name:str ="bubby", interactive:bool = False, local:bool = False) -> None:
 		"""
 		This method captures and image using cv2 and saves the image 
 		as a jpg with the given name arguement
@@ -41,17 +41,50 @@ class Camera:
 		:return: void
 		"""
 		cap = cv2.VideoCapture(0)
-		time.sleep(5)
-		ret, frame = cap.read()
-		# save localy or in Mongo
-		if not local:
-			MongoDBClient.add_image("ObjectDetection", Camera.convert_to_jpg_binary(frame), f"{name}_{uuid.uuid1()}")
-		elif local:
-			cv2.imwrite(f"{name}.jpg", frame)
-			cv2.imshow("frame", frame)
+		
+		if interactive:
+			while True:
+				ret, frame = cap.read()
+				cv2.imshow("frame", frame)
+				if cv2.waitKey(1) & 0xff == ord('q'):
+					break
+			Camera.save_image(name, frame, local)
+		elif not interactive:
+			time.sleep(5)
+			ret, frame = cap.read()
+			Camera.save_image(name, frame, local)		
+				
 		time.sleep(2)
 		cap.release()
 		cv2.destroyAllWindows()
+	
+	
+	@staticmethod
+	def save_image(name, frame, local):
+		if local:
+			Camera.save_locally(name, frame)
+			return
+		Camera.save_to_mongo(name, frame)
+	
+	
+	
+	@staticmethod
+	def save_to_mongo(name, frame):
+		MongoDBClient.add_fs_file("ObjectDetection", Camera.convert_to_jpg_binary(frame), f"{name}_{uuid.uuid1()}")
+		
+	
+	
+	@staticmethod
+	def save_localy(name, frame):
+		cv2.imwrite(f"{name}.jpg", frame)
+	
+	
+	@staticmethod
+	def delete_image(_id:str) -> None:
+		MongoDBClient.delete_fs_file("ObjectDetection", _id)
+			
+			
+			
 	
 	@staticmethod
 	def retrieve_image(name:str, write:bool = False) -> str or None:
@@ -61,7 +94,7 @@ class Camera:
 		:write bool: if set to True writes image to disk if not returns binary data as a string
 		:return void or str: if write is False the binary data is returned as a string 
 		"""
-		binary_image_data = MongoDBClient.retrieve_image("ObjectDetection", name)
+		binary_image_data = MongoDBClient.retrieve_fs_file("ObjectDetection", name)
 		if write:
 			with open(f"{name}.jpg", "wb") as f:
 				f.write(binary_image_data)
