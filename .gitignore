@@ -1,4 +1,6 @@
 DatabaseManagers.py
+models
+models/*
 __pychache__
 __pycache__/*
 labeling_software
