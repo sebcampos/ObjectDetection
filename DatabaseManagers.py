@@ -1,13 +1,13 @@
 from pymongo import MongoClient
 from pymongo.database import Database
+from credentials import CONNECTION_STRING
 from pandas import DataFrame
 import gridfs
 import atexit
 
 
 class MongoDBClient:
-    connection_string = CONNECTION_STRING
-    mclient = MongoClient(connection_string)
+    mclient = MongoClient(CONNECTION_STRING)
 
 
     @classmethod
