@@ -62,7 +62,7 @@ class Camera:
 	@staticmethod
 	def save_image(name, frame, local):
 		if local:
-			Camera.save_locally(name, frame)
+			Camera.save_localy(name, frame)
 			return
 		Camera.save_to_mongo(name, frame)
 	
