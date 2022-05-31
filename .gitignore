@@ -3,5 +3,5 @@ models
 models/*
 __pychache__
 __pycache__/*
-labeling_software
-labeling_software/*
+img_label_software
+img_label_software/*
