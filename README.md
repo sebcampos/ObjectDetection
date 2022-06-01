@@ -35,6 +35,10 @@
 - `echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list`
 
 
+## Labeling Software
+- git clone https://github.com/tzutalin/labelImg img_label_software
+
+
 ## pyenv
 ``https://realpython.com/intro-to-pyenv/``
 ### Pyenv dependencies
