@@ -1,0 +1,210 @@
+html, body {
+   margin: auto;
+   position: relative;
+}
+
+.background {
+	background-color: black;
+}
+
+
+.main_title {
+	position: relative;
+	top: 15%;
+	text-align: center;
+	color: white;
+	
+}
+
+#logo {
+	position: relative;
+	top: 25%;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	background: url("/static/images/python-logo.jpg") no-repeat center;
+	background-color: white;
+	border-radius: 50%;
+	background-size: contain;
+}
+
+#js-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/js-logo.jpg") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(-75%, -60%);
+}
+
+
+#css-logo {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/css-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(-125%, -300%);
+}
+
+
+#html-logo {
+	width: 45px;
+	height: 45px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/html-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(-200%, -350%);
+}
+
+#django-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/django-logo.png") no-repeat center;
+	background-color: #002E20;
+	background-size: contain;
+	transform: translate(-100%, -200%);
+}
+
+#java-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/java-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(940%, 250%);
+}
+
+#selenium-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/selenium-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(900%, 240%);
+}
+
+#linux-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/linux-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(50%, -110%);
+}
+
+#google-cloud-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/google-cloud-logo.jpg") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(150%, -160%);
+}
+
+#ubuntu-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/ubuntu-logo.jpg") no-repeat center;
+	background-color: red;
+	background-size: contain;
+	transform: translate(150%, -160%);
+}
+
+
+
+#mongodb-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/mongodb-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(250%, -500%);
+}
+
+
+#sqldatabase-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/sqldatabase-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(1200%, -500%);
+}
+
+#pandas-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/pandas-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(170%, -655%);
+}
+
+#postgres-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/postgres-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(170%, -655%);
+}
+
+#mysql-logo {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/mysql-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(170%, -655%);
+}
+
+
+/*
+* {
+  outline: 2px solid red;
+}
+*/
+

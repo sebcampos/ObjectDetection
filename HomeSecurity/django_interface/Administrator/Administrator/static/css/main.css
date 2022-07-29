@@ -1,0 +1,139 @@
+html, body {
+   margin: auto;
+   position: relative;
+}
+
+.background {
+	background-color: black;
+}
+
+
+.main_title {
+	position: relative;
+	top: 15%;
+	text-align: center;
+	color: white;
+	
+}
+
+.logo {
+	position: relative;
+	top: 30%;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	background: url("/static/images/python-logo.jpg") no-repeat center;
+	background-color: white;
+	border-radius: 50%;
+	background-size: contain;
+	bottom: 50%;
+}
+
+.js-logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/js-logo.jpg") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(-50%, -50%);
+}
+
+
+.css-logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/css-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(-50%, 50%);
+}
+
+
+.html-logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/html-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(150%, -250%);
+}
+
+.java-logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/java-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(-60%, -450%);
+}
+
+.linux-logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/linux-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(50%, -110%);
+}
+
+.google-cloud-logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/google-cloud-logo.jpg") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(150%, -260%);
+}
+
+
+
+.mongodb-logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/mongodb-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(50%, -680%);
+}
+
+
+.sqldatabase-logo {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 0%;
+	border-radius: 100%;
+	background: url("/static/images/sqldatabase-logo.png") no-repeat center;
+	background-color: white;
+	background-size: contain;
+	transform: translate(200%, -650%);
+}
+
+
+/*
+* {
+  outline: 2px solid red;
+}
+*/
+
